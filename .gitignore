@@ -1,3 +1,6 @@
+# test cases
+tests/*.json
+
 # virtual environment
 venv/*
 

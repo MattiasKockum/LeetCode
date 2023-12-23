@@ -62,7 +62,3 @@ def findMedianSortedArrays(nums1: list[int], nums2: list[int]) -> float:
                 return nums1[int(goal_pos) - pos - 1]
             else:
                 return sum(nums1[int(goal_pos) - pos - 1 : int(goal_pos) - pos + 1]) / 2
-
-    print(f"{n_2=}, {n_1=}, {pos=}, {goal_pos=}, {nums1=}, {nums2=}")
-
-    return -200
