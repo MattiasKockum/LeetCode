@@ -1,5 +1,8 @@
 # test cases
-tests/*.json
+test_cases/*.json
+
+# profiles
+profiles/*
 
 # virtual environment
 venv/*
