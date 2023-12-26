@@ -1,6 +1,5 @@
 import pytest
 import json
-import numpy as np
 
 from leetcode.solutions.findMedianSortedArrays import Solution
 
