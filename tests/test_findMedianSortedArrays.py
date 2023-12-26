@@ -12,5 +12,5 @@ def read_test_cases():
 
 S = Solution()
 @pytest.mark.parametrize("nums1, nums2, expected_result", read_test_cases())
-def test_find_median_of_two_sorted_lists (nums1, nums2, expected_result):
+def test_findMedianSortedArrays(nums1, nums2, expected_result):
     assert S.findMedianSortedArrays(nums1, nums2) == expected_result
