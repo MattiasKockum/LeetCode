@@ -7,9 +7,15 @@ def read_parameters():
         parameters = yaml.safe_load(f)
     return parameters
 
+known_test_cases = [
+
+]
+
 def generate_test_cases():
     parameters = read_parameters()
     test_cases = []
+    for test_case in tqdm(known_test_cases):
+        test_cases.append(test_case)
     for _ in tqdm(range(parameters["nb_test_cases"])):
         test_cases.append((0, 0))
     test_cases_dict = {
