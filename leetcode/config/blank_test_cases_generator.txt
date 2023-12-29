@@ -7,6 +7,15 @@ def read_parameters():
         parameters = yaml.safe_load(f)
     return parameters
 
+
+def get_random_input(parameters):
+  return 0
+
+
+def brute_force_solution(self, x):
+  return 0
+
+
 known_test_cases = [
 
 ]
@@ -14,10 +23,13 @@ known_test_cases = [
 def generate_test_cases():
     parameters = read_parameters()
     test_cases = []
+    nb_test_cases = parameters["nb_test_cases"]
     for test_case in tqdm(known_test_cases):
         test_cases.append(test_case)
-    for _ in tqdm(range(parameters["nb_test_cases"])):
-        test_cases.append((0, 0))
+    for _ in tqdm(range(nb_test_cases)):
+        random_input = get_random_input(parameters)
+        output = brute_force_solution(random_input)
+        test_cases.append((random_input, output))
     test_cases_dict = {
         "input": 1,
         "output": 1,
