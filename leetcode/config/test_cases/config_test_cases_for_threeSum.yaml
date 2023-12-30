@@ -1,0 +1,5 @@
+nb_test_cases: 300
+min_len: 3
+max_len: 300
+min_val: -100000
+max_val: 100000

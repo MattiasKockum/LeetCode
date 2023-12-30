@@ -49,7 +49,7 @@ def measure_space_time_complexity(function_name):
     return size, space_array, time_taken
 
 
-def plot_performances(function_name, outliers_threshold=0.95):
+def plot_performances(function_name, outliers_threshold=1):
     # TODO : make faster profiling by taking one test by group of same size
     fig, axs = plt.subplots(1, 2)
     fig.tight_layout()
