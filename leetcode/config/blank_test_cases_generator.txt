@@ -1,15 +1,20 @@
 from tqdm import tqdm
 import json
 import yaml
+import numpy as np
 
 def read_parameters():
-    with open("leetcode/config/test_cases/config_test_cases_for_function.yaml", 'r') as f:
+    with open("leetcode/config/test_cases/config_test_cases_for_removeNthFromEnd.yaml", 'r') as f:
         parameters = yaml.safe_load(f)
     return parameters
 
 
 def get_random_input(parameters):
-  return 0
+    min_size = parameters["min_size"]
+    max_size = parameters["max_size"]
+    min_val = parameters["min_val"]
+    max_val = parameters["max_val"]
+    return 0
 
 
 def brute_force_solution(self, x):
@@ -36,7 +41,7 @@ def generate_test_cases():
         "get_size": "len",
         "test_cases": test_cases
     }
-    with open("test_cases/test_cases_for_function.json", 'w') as f:
+    with open("test_cases/test_cases_for_removeNthFromEnd.json", 'w') as f:
         json.dump(test_cases_dict, f)
 
 
