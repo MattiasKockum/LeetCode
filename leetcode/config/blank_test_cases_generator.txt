@@ -4,7 +4,7 @@ import yaml
 import numpy as np
 
 def read_parameters():
-    with open("leetcode/config/test_cases/config_test_cases_for_removeNthFromEnd.yaml", 'r') as f:
+    with open("leetcode/config/test_cases/config_test_cases_for_function.yaml", 'r') as f:
         parameters = yaml.safe_load(f)
     return parameters
 
@@ -22,8 +22,10 @@ def brute_force_solution(self, x):
 
 
 known_test_cases = [
-
+    [0, 0],
 ]
+input_size = 1
+output_size = 1
 
 def generate_test_cases():
     parameters = read_parameters()
@@ -36,12 +38,12 @@ def generate_test_cases():
         output = brute_force_solution(random_input)
         test_cases.append((random_input, output))
     test_cases_dict = {
-        "input": 1,
-        "output": 1,
+        "input": input_size,
+        "output": output_size,
         "get_size": "len",
         "test_cases": test_cases
     }
-    with open("test_cases/test_cases_for_removeNthFromEnd.json", 'w') as f:
+    with open("test_cases/test_cases_for_function.json", 'w') as f:
         json.dump(test_cases_dict, f)
 
 
