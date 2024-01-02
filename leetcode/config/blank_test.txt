@@ -11,6 +11,6 @@ def read_test_cases():
 
 S = Solution()
 @pytest.mark.parametrize("x, expected_result", read_test_cases())
-def test_findMedianSortedArrays(x, expected_result):
+def test_function(x, expected_result):
     assert S.function(x) == expected_result
 
